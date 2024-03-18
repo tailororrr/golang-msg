@@ -118,7 +118,7 @@ func (this *Server) Start() {
 }
 
 func main() {
-	server := NewServer("10.170.46.245", 7890)
+	server := NewServer("127.0.0.1", 8888)
 	server.Start()
 }
 // ⚆₋⚆⸝ฅ˒˒⁽🌿·🍀·🌿⁾ฅ⁺⁸¹⁸˗੯‧̀͡u

@@ -83,8 +83,8 @@ var serverIp string
 var serverPort int
 
 func init() {
-	flag.StringVar(&serverIp, "ip", "10.170.46.245", "设置服务器IP地址")
-	flag.IntVar(&serverPort, "port", 7890, "设置服务器端口")
+	flag.StringVar(&serverIp, "ip", "127.0.0.1", "设置服务器IP地址")
+	flag.IntVar(&serverPort, "port", 8888, "设置服务器端口")
 }
 
 
