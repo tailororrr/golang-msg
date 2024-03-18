@@ -57,7 +57,11 @@ func (this *Server) Handler(conn net.Conn) {
 	//fmt.Println("链接建立成功")
 
 	user := NewUser(conn, this)
-	user.Online()
+	//
+
+	//
+
+	user.Online(conn)
 	
 	//接受客户端发送的消息
 	go func() {
@@ -114,6 +118,7 @@ func (this *Server) Start() {
 }
 
 func main() {
-	server := NewServer("127.0.0.1", 8888)
+	server := NewServer("10.170.46.245", 7890)
 	server.Start()
 }
+// ⚆₋⚆⸝ฅ˒˒⁽🌿·🍀·🌿⁾ฅ⁺⁸¹⁸˗੯‧̀͡u
